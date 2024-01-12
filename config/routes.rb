@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'rooms/create'
+  get 'rooms/index'
+  get 'rooms/show'
   devise_for :users
 
   root :to =>"homes#top"
