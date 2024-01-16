@@ -9,7 +9,7 @@
 <% @messages.each do |m| %>
   <% if @myUserId == m.user.id %>
     <p><%= m.user.name %></p>
-    <p><%= m.body %></p> <!-- m.message を m.body に変更 -->
+    <p><%= m.message %></p>
   <% end %>
 <% end %>
 
