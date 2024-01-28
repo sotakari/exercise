@@ -21,6 +21,14 @@
         </td>
         <td><%= render "book_comments/counter", book: book %></td>
       </tr>
+
     <% end %>
+  </tbody>
+
+  <tbody>
+    <tr>
+     <td>今日の投稿数</td>
+     <td><%= current_user.books.where('created_at > ?', Date.today).count %></td>
+    </tr>
   </tbody>
 </table>

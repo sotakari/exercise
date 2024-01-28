@@ -10,6 +10,7 @@
       <h2>Books</h2>
       <%= render 'books/index',books: @books %>
     </div>
+
     <!-- メッセージ送信ボタン -->
     <% unless @user.id == current_user.id %>
       <% if (current_user.following? @user) && (@user.following? current_user)  %>
